@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ethical Hacking Lab - Beginner to Pro (for Buaa)</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #00ffaa;
+    }
+    code {
+      background-color: #000000;
+      color: #00ff99;
+      padding: 6px 10px;
+      display: block;
+      margin: 5px 0;
+      border-left: 4px solid #00ffaa;
+    }
+    a {
+      color: #00aaff;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🛡️ Ethical Hacking Lab Setup Guide for Buaa (Beginner to Pro)</h1>
+
+  <div class="section">
+    <h2>📌 1. What is Ethical Hacking?</h2>
+    <p>Ethical hacking is legally testing a system's security to find vulnerabilities. It helps organizations fix weaknesses before real hackers exploit them.</p>
+  </div>
+
+  <div class="section">
+    <h2>💿 2. Install Kali Linux with VirtualBox</h2>
+    <code>sudo apt update && sudo apt install virtualbox -y</code>
+    <p>Download ISO: <a href="https://www.kali.org/get-kali/#kali-platforms" target="_blank">kali.org</a></p>
+    <ul>
+      <li>Open VirtualBox → New → Name: Kali Linux</li>
+      <li>Type: Linux, Version: Debian (64-bit)</li>
+      <li>RAM: 2GB+, HDD: 20GB+</li>
+      <li>Attach Kali ISO → Start and install</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>👤 3. Create New User & Update System</h2>
+    <code>sudo adduser buaa</code>
+    <code>sudo usermod -aG sudo buaa</code>
+    <code>sudo apt update && sudo apt upgrade -y</code>
+  </div>
+
+  <div class="section">
+    <h2>🧰 4. Important Kali Linux Tools & Uses</h2>
+    <ul>
+      <li><b>nmap</b>: Network scanning → <code>nmap -sV target_ip</code></li>
+      <li><b>wireshark</b>: Network packet analysis</li>
+      <li><b>burpsuite</b>: Web app vulnerability testing</li>
+      <li><b>metasploit</b>: Exploit development</li>
+      <li><b>john</b>: Password cracking</li>
+      <li><b>hydra</b>: Brute-force login testing</li>
+      <li><b>hashcat</b>: Advanced password cracking</li>
+      <li><b>aircrack-ng</b>: Wi-Fi hacking</li>
+      <li><b>sqlmap</b>: SQL injection automation</li>
+    </ul>
+    <code>sudo apt install nmap wireshark burpsuite metasploit-framework john hydra hashcat aircrack-ng sqlmap -y</code>
+  </div>
+
+  <div class="section">
+    <h2>📡 5. Networking & Route Setup</h2>
+    <code>ip a</code>
+    <code>sudo ip route add default via 192.168.1.1</code>
+    <code>sudo hostnamectl set-hostname buaa-hacker</code>
+    <code>sudo nano /etc/hosts</code>
+    <p>Add this line:</p>
+    <code>127.0.1.1 buaa-hacker</code>
+  </div>
+
+  <div class="section">
+    <h2>💻 6. Useful Linux Commands</h2>
+    <code>ifconfig</code>
+    <code>ping google.com</code>
+    <code>whoami</code>
+    <code>netstat -tulpn</code>
+    <code>sudo systemctl start postgresql</code>
+    <code>msfconsole</code>
+  </div>
+
+  <div class="section">
+    <h2>🌐 7. Best Practice Sites</h2>
+    <ul>
+      <li><a href="https://tryhackme.com" target="_blank">TryHackMe</a> (For beginners)</li>
+      <li><a href="https://hackthebox.com" target="_blank">HackTheBox</a> (Intermediate)</li>
+      <li><a href="https://vulnhub.com" target="_blank">VulnHub</a> (Downloadable Labs)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📈 8. Growth Path: Beginner to Pro</h2>
+    <ul>
+      <li>Linux Basics → Terminal</li>
+      <li>Networking → Ports, IP, DNS</li>
+      <li>Tool Mastery → nmap, burpsuite, etc.</li>
+      <li>Learn Python → Scripts & automation</li>
+      <li>Web Hacking → OWASP Top 10</li>
+      <li>Try CTFs (Capture the Flag)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📥 9. Downloads & Language Options</h2>
+    <p>
+      <a href="https://www.solutioninhindi.com/wp-content/uploads/2022/05/Hacking-Course-In-Hindi-Free-Hacking-Tutorial-2022-Solution-In-Hindi.pdf" target="_blank">Download PDF</a> |
+      <a href="https://www.youtube.com/watch?v=eExJBTDfS0M" target="_blank">Watch Hindi Video</a> |
+      <a href="#">Switch to Hindi</a>
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>❤️ Made by kartik for Buaa 👩‍💻</h2>
+    <p>Start your hacking journey! Ask kartik if you're stuck. 😄</p>
+  </div>
+</body>
+</html>
